@@ -1,0 +1,11 @@
+<?php
+
+namespace Tests;
+
+class TestConfigHandler
+{
+    public function userField()
+    {
+        return '1';
+    }
+}

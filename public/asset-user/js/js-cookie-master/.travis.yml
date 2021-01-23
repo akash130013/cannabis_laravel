@@ -1,0 +1,21 @@
+addons:
+  browserstack:
+    username: ${BROWSERSTACK_USERNAME}
+    access_key: ${BROWSERSTACK_ACCESS_KEY}
+    forcelocal: true
+language: node_js
+node_js:
+  - '8'
+  - '10'
+cache:
+  directories:
+    - node_modules
+stages:
+  - test
+  - name: browserstack
+    if: env(BROWSERSTACK_USERNAME) IS present
+jobs:
+  include:
+    - stage: browserstack
+      node_js: '10'
+      script: grunt browserstack

@@ -1,0 +1,41 @@
+header {
+    background: #fff;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.branding {
+    width: 240px;
+    margin: 0;
+}
+
+.branding img {
+    display: block;
+}
+
+.header-right-container {
+    display: flex;
+}
+
+.log-sign-btn {
+    border-radius: 6px;
+    padding: 10px 20px;
+    border: 1px solid #8cc83b;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0 0 0 15px;
+}
+
+.log-sign-btn.line {
+    color: #8cc83b;
+}
+
+.log-sign-btn.fill {
+    background: #8cc83b;
+    color: #fff;
+}

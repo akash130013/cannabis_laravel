@@ -1,0 +1,21 @@
+body { background-color:#fafafa;}
+
+.collection-item{
+    transition: all 150ms ease-in-out;
+}
+
+.collection-item a{
+    color: inherit;
+}
+
+.collection-item:hover{
+    background-color: #eafaf9;
+}
+
+.collection-item.active2{
+    background-color: red;
+}
+
+.no-apps-found{
+    display: none;
+}

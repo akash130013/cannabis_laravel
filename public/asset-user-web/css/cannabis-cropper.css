@@ -1,0 +1,49 @@
+#cropper_modal .modal-lg {
+    max-width: 500px;
+    }
+    .container {
+    max-width: 400px;
+    margin: 20px auto;
+    }
+    img {
+    max-width: 100%;
+    }
+    .webcam_cropped_image_preview {
+    overflow: hidden;
+    }
+    .cropped_image_preview {
+    overflow: hidden;
+    }
+    .modal-backdrop {
+    opacity: 0.1 !important;
+    }
+    .close {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff8338;
+    border-radius: 50%;
+    padding: 3px 4px;
+    opacity: 1;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid #fff;
+    }
+    .m-b-15{
+    margin-bottom: 15px;
+    }
+    .pac-container {
+    z-index: 10000 !important;
+    }
+    /* .cropper-view-box,
+    .cropper-face {
+    border-radius: 50%;
+    } */
+ 
+    @media (max-width: 640px){
+       .close{
+          right: 0;
+       }
+    }

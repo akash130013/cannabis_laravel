@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<style>
+		.exceeded { color: red; }
+		textarea { width: 200px; height: 50px; }
+	</style>
+	<title>jQuery Character Counter Demo</title>
+</head>
+<body>
+
+	<header role="banner">
+		<h1>jQuery Character Counter Demo</h1>
+	</header>
+
+	<div class="wrap">
+		<main role="main">
+			<section>
+				<header>
+					<h2>Examples</h2>
+				</header>
+
+				<p>View the source of this page to see the code for each example below.</p>
+
+				<article id="examples">
+					<div class="example">
+						<h3>#1 - Default Usage</h3>
+						<form>
+                            <p><input id="name"></input></p>
+
+							<p><textarea id="profile"></textarea></p>
+						</form>
+					</div>
+					<div class="example">
+						<h3>#2 - Multiple Inputs</h3>
+						<form>
+							<p>
+								<textarea class="count_me"></textarea>
+							</p>
+							<p>
+								<textarea class="count_me"></textarea>
+							</p>
+							<p>
+								<textarea class="count_me"></textarea>
+							</p>
+						</form>
+					</div>
+					<div class="example">
+						<h3>#3 - Custom Counter Format</h3>
+						<form>
+							<p>
+								<textarea id="custom_format_1"></textarea>
+							</p>
+							<p>
+								<textarea id="custom_format_2"></textarea>
+							</p>
+						</form>
+					</div>
+					<div class="example">
+						<h3>#4 - Callbacks</h3>
+						<form>
+							<p>
+								<textarea id="callback"></textarea>
+							</p>
+						</form>
+					</div>
+					<div class="example">
+						<h3>#5 - Custom Fields</h3>
+						<p>Inspect counter element to see custom fields applied.</p>
+						<p>
+						<form>
+							<p>
+								<textarea id="custom_fields"></textarea>
+							</p>
+						</form>
+					</div>
+					<div class="example">
+						<h3>#6 - Counter Selector (<span id="my_counter"></span> characters left)</h3>
+						<p>Counter could be anywhere on the page.</p>
+						<p>
+						<form>
+							<p>
+								<textarea id="counter_selector"></textarea>
+							</p>
+						</form>
+					</div>
+					<div class="example">
+						<h3>#7 - Multiple Counters</h3>
+						<form>
+							<p style="width: 205px;">
+                <span class="a_counter" style="float: right;"></span>
+								<textarea id="multiple_counters"></textarea>
+                <span class="a_counter"></span>
+							</p>
+              </div>
+						</form>
+					</div>
+				</article>
+			</section>
+		</main>
+	</div>
+
+	<footer role="contentinfo">
+		<small>Copyright &copy; <time datetime="2013">2013</time></small>
+	</footer>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.charactercounter.js"></script>
+	<script>
+		$(function(){
+			//Example #1
+            $("#name").characterCounter({
+ limit: 10,
+renderTotal: true
+            });
+            $("#profile").characterCounter();
+
+            //Example #2
+            $(".count_me").characterCounter();
+
+            //Example #3
+            $("#custom_format_1").characterCounter({
+            	counterFormat: '%1 characters remaining.'
+            });
+
+            $("#custom_format_2").characterCounter({
+            	counterFormat: 'Characters Remaining: %1'
+            });
+
+            //Example #4
+            $("#callback").characterCounter({
+            	onExceed: function(){
+            		alert("Limit exceeded.");
+            	},
+            	onDeceed: function(){
+            		alert("Limit deceeded.");
+            	}
+            });
+
+            //Exampe #5
+            $("#custom_fields").characterCounter({
+            	customFields: {
+            		'class': 'test this class',
+            		'data-id': 'custom-field-example'
+            	}
+            });
+
+            //Example #6
+            $("#counter_selector").characterCounter({
+              counterSelector: '#my_counter'
+            });
+
+            //Example #6
+            $("#multiple_counters").characterCounter({
+              counterSelector: '.a_counter'
+            });
+
+		});
+	</script>
+</body>
+</html>

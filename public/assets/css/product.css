@@ -1,0 +1,208 @@
+.internal-container.product {
+    padding: 0;
+}
+
+.cb-tabsHdr {
+    background: #fff;
+    padding: 0;
+    border-top: 1px solid #e3e8ee;
+}
+
+.nav-tabs {
+    border-bottom: 0;
+}
+
+.nav-tabs .nav-item {
+    padding: 0 15px;
+}
+
+.nav-tabs .nav-link {
+    border: 0;
+    color: #9facba;
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    padding: 21px 10px;
+}
+
+.nav-tabs .nav-link.active {
+    border-bottom: 2px solid #8cc83b !important;
+    border: 0;
+    border-radius: 0;
+}
+
+.internal-container.product .form-container {
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+    color: #8cc83b;
+    border-color: #8cc83b #8cc83b #8cc83b;
+}
+
+.cb-tabsBody .form-container {
+    margin-top: 20px;
+}
+
+.noproductBar .product-header {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 19.6px 0.4px rgba(113, 113, 113, 0.1);
+}
+
+.noproductBar .product-header h2 {
+    font-size: 20px;
+    color: #2d2e30;
+    font-weight: 600;
+    padding: 23px 23px;
+}
+
+.addnewproduct-screen-second .product-header {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 19.6px 0.4px rgba(113, 113, 113, 0.1);
+    position: relative;
+}
+
+.addnewproduct-screen-second .product-header h2 {
+    font-size: 20px;
+    color: #2d2e30;
+    font-weight: 600;
+    padding: 23px 23px;
+}
+
+.noproductBar .product-body {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    box-shadow: 0px 3px 19.6px 0.4px rgba(113, 113, 113, 0.1);
+    background: #fff;
+}
+
+.noprdct-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.noprdct-screen img {
+    width: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.noprdct-screen h3 {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.noprdct-screen p {
+    font-size: 14px;
+    color: #98a6b5;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.noproductBar .product-body h3 {
+    font-size: 20px;
+    color: #2d2e30;
+    font-weight: 600;
+    padding: 23px 23px;
+    margin: 0 0 18px 0;
+}
+
+
+/* New Product Screen */
+
+.addnewproduct-screen .product-header {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 19.6px 0.4px rgba(113, 113, 113, 0.1);
+    position: relative;
+}
+
+.addnewproduct-screen .product-header h2 {
+    font-size: 20px;
+    color: #2d2e30;
+    font-weight: 600;
+    padding: 23px 23px;
+}
+
+.addPrdctForm {
+    position: relative;
+    min-height: 600px;
+    background: #fff;
+}
+
+.addPrdctForm .frm-sec-ins {
+    margin: 0;
+    max-width: 800px;
+    margin: auto;
+    padding: 100px 0;
+}
+
+.addPrdctForm .frm-sec-ins .form-group select {
+    min-width: 100%;
+}
+
+.selectpanel {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 100%;
+}
+
+.addPrdctForm .selectpanel select {
+    background: #8cc83b;
+    font-weight: 400;
+}
+
+.selectedIndex {
+    color: #fff;
+}
+
+.addPrdctForm .dropmenu {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 14px;
+    right: 10px;
+    left: auto;
+}
+
+.cross {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.addPrdctForm .btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 160px;
+    margin: auto;
+}
+
+.quantity {
+    width: 142px !important;
+    display: inline-block;
+    margin-left: 10px !important;
+    padding: 12px 11px !important;
+}
+
+.searchproduct1 {
+    display: inline-block;
+    width: 80% !important;
+}

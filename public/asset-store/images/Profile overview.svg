@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.626" height="15" viewBox="0 0 16.626 15">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #8cc83b;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Profile_overview" data-name="Profile overview" class="cls-1" d="M96.2,272.827A0.83,0.83,0,0,1,97.019,272h14.955a0.825,0.825,0,0,1,.823.827v13.345a0.833,0.833,0,0,1-.823.828H97.019a0.826,0.826,0,0,1-.822-0.828V272.827Zm1.659,0.839v11.667h13.281V273.666H97.856Zm1.661,1.667H104.5v5H99.516v-5Zm1.66,1.667v1.666h1.66V277h-1.66Zm-1.66,5h9.961v1.667H99.516V282Zm6.64-6.666h3.321V277h-3.321v-1.667Zm0,3.333h3.321v1.667h-3.321v-1.667Z" transform="translate(-96.188 -272)"/>
+</svg>

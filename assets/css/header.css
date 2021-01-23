@@ -1,0 +1,131 @@
+header {
+    background: #fff;
+    padding: 17px 0;
+    box-shadow: 0px 4px 9.8px 0.2px rgba(113, 113, 113, 0.08);
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.branding {
+    width: 240px;
+    margin: 0;
+}
+
+.branding img {
+    display: block;
+}
+
+.header-right-container {
+    display: flex;
+}
+
+.log-sign-btn {
+    border-radius: 5px;
+    padding: 10px 21px;
+    border: 1px solid #8cc83b;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0 0 0 15px;
+}
+
+.log-sign-btn.line {
+    color: #8cc83b;
+}
+
+.log-sign-btn.fill {
+    background: #8cc83b;
+    color: #fff;
+}
+
+.header-right-container ul li {
+    position: relative;
+    font-weight: 500;
+    font-size: 12px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.header-right-container ul li img {
+    width: 25px;
+    height: 31px;
+    margin-right: 3px;
+}
+
+.header-right-container ul li img.user-icon {
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    outline: none;
+}
+
+ul.user_menu {
+    /* position: absolute;
+    width: 150px;
+    background: #fff;
+    padding: 10px;
+    top: 62px;
+    z-index: 9;
+    left: 0; */
+    opacity: 0;
+    backface-visibility: hidden;
+    transform: rotateX(-90deg);
+    transform-style: preserve-3d;
+    transform-origin: top center;
+    transition: transform .4s cubic-bezier(.17, .67, .59, 1.21), opacity .1s .1s;
+    z-index: 100;
+    list-style-type: none;
+    position: absolute;
+    top: 59px;
+    left: 0;
+    width: 150px;
+    margin: 0;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+ul.user_menu li {
+    width: 100%;
+    margin: 0;
+    border-bottom: 1px solid #c3d1df;
+    padding: 10px 0;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+ul.user_menu li:hover {
+    color: #46861f;
+    border-bottom: 1px solid #46861f;
+}
+
+.header-right-container ul li:hover ul.user_menu {
+    opacity: 1;
+    transform: rotateX(0) translateZ(0);
+}
+
+ul.user_menu li:last-child {
+    border-bottom: 0;
+}
+
+.notifiyDot {
+    width: 13px;
+    height: 11px;
+    border-radius: 50%;
+    background: #ff8338;
+    position: absolute;
+    top: 2px;
+    left: 13px;
+}

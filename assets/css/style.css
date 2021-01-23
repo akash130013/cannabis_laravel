@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap');
+
+/* font-family: 'Montserrat', sans-serif; */
+
+* {
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-appearance: value;
+    -moz-appearance: value;
+    appearance: value;
+}
+
+html,
+body,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+span,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+fieldset {
+    margin: 0px auto;
+    padding: 0px;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    -webkit-text-stroke: 0px !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+a,
+img a {
+    text-decoration: none;
+    border: 0;
+    outline: 0 !important;
+    transition: all ease-in .3s;
+    -moz-transition: all ease-in .3s;
+    -ms-transition: all ease-in .3s;
+    -o-transition: all ease-in .3s;
+    -webkit-transition: all ease-in .3s;
+}
+
+a,
+button,
+input {
+    transition: all ease-in .3s;
+    -moz-transition: all ease-in .3s;
+    -ms-transition: all ease-in .3s;
+    -o-transition: all ease-in .3s;
+    -webkit-transition: all ease-in .3s;
+}
+
+:focus {
+    outline: 0px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+ol,
+ul,
+li {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.form-group {
+    margin-bottom: 0;
+    position: relative;
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dm_serif_textregular';
+    src: url('../fonts/dmseriftext-regular-webfont.woff2') format('woff2'), url('../fonts/dmseriftext-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.clear {
+    clear: both;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+article {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    /* scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth; */
+}
+
+body {
+    background: #f7f9fc;
+    font-size: 14px;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    -webkit-text-stroke: 0px !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+    border-radius: 5px;
+    margin: 0 0 22px;
+    padding: 13px 20px;
+    font-size: 15px;
+    border: 1px solid #c3d1df;
+    width: 100%;
+    height: auto;
+    resize: none;
+    transition: all ease-in .3s;
+    -moz-transition: all ease-in .3s;
+    -ms-transition: all ease-in .3s;
+    -o-transition: all ease-in .3s;
+    -webkit-transition: all ease-in .3s;
+}
+
+input[type="text"]:hover,
+textarea:hover,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #8cc83b;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    box-shadow: 0 0 4px rgba(140, 200, 59, 0.70) !important;
+    -moz-box-shadow: 0 0 4px rgba(140, 200, 59, 0.70) !important;
+    -ms-box-shadow: 0 0 4px rgba(140, 200, 59, 0.70) !important;
+    -o-box-shadow: 0 0 4px rgba(140, 200, 59, 0.70) !important;
+    -webkit-box-shadow: 0 0 4px rgba(140, 200, 59, 0.70) !important;
+}
+
+
+/* Page Css */
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.custom-btn {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 11px 56px;
+    border: 0;
+    border-radius: 6px;
+}
+
+.green-fill {
+    background: #8cc83b;
+    color: #fff;
+    border: 1px solid #8cc83b;
+    box-shadow: 0 3px 7px rgba(102, 148, 41, 0.39);
+}
+
+.trans-fill {
+    color: #98a6b5;
+    background: transparent;
+    border: 1px solid #98a6b5;
+    box-shadow: 0 3px 7px rgba(102, 148, 41, 0.39);
+}
+
+.active-fill {
+    color: #8cc83b;
+    background: transparent;
+    border: 1px solid #8cc83b;
+    box-shadow: 0 3px 7px rgba(102, 148, 41, 0.39);
+}
+
+.active-fill:hover {
+    color: #fff;
+    background: #8cc83b;
+}
+
+.green-fill:hover {
+    color: #8cc83b;
+    background: transparent;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.pl-90 {
+    padding-left: 90px !important;
+}
+
+.pl-210 {
+    padding-left: 210px !important;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}

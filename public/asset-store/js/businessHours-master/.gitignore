@@ -1,0 +1,13 @@
+.settings
+.project
+*.bak
+*.idea
+*.swp
+*~
+*.orig
+build
+*.iml
+.coverage
+
+node_modules
+bower_components
